@@ -91,7 +91,7 @@
         </ul>
         <ul class="navbar-nav ml-auto" style="margin-right: 15px;">
             <li class="nav-item active">
-                <a class="nav-link" href="">Inscription</a>
+                <a class="nav-link" href="{{route('inscription')}}">Inscription</a>
             </li>
             <li class="nav-item active">
                 <a class="nav-link" href="">Connexion</a>

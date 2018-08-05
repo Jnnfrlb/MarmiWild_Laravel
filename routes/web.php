@@ -11,10 +11,18 @@
 |
 */
 
-Route::get('/welcome', function () {
+Route::get('/welcome', function() {
     return view('welcome');
 });
 
-Route::get('/', function () {
+Route::get('/', function() {
     return view('accueil');
+})->name('accueil');
+
+Route::get('/inscription', function() {
+    return view('inscription');
+})->name('inscription');
+
+Route::post('/inscription', function(){
+    return "Nous avons bien reçu votre mail : " . request('email');
 });
